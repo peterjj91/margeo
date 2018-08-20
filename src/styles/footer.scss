@@ -1,0 +1,96 @@
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 31px 0px;
+  color: #000000;
+  position: relative;
+  font-size: 14px;
+
+  @media (max-width: $screen-md) {
+
+  }
+  @media (max-width: $screen-sm) {
+    padding: 19px 0px 10px 0px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &__container {
+    @extend .container;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: $screen-sm) {
+      display: block;
+    }
+  }
+
+  &__block {
+    margin-right: 10px;
+
+    @media (max-width: $screen-sm) {
+      margin-right: 0;
+      margin-bottom: 22px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      @media (max-width: $screen-sm) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__contanct {
+    @media(max-width: $screen-sm){
+
+    }
+  }
+
+  &__nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 44px;
+
+      @media (max-width: $screen-xs) {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        @media (max-width: $screen-xs) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  a {
+    color: #000;
+
+    &.footer__client {
+      @extend .color--bright;
+    }
+  }
+
+  p {
+    margin-bottom: 6px;
+  }
+}

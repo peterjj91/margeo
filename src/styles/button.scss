@@ -1,0 +1,50 @@
+button {
+  outline: none;
+  border: none;
+}
+
+.btn {
+  border: none;
+  position: relative;
+  z-index: 1;
+  outline: none !important;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+
+  &:active, &:focus {
+    box-shadow: none;
+    outline: 0px;
+  }
+
+  &__promo {
+    padding: 10px 20px 11px 20px;
+    font-size: 16px;
+    border-radius: 0px;
+    color: white;
+    box-shadow: none;
+    background-color: transparent;
+    border: 2px solid white;
+    @include transition(all .2s ease-in-out);
+
+    @media (max-width: $screen-sm){
+      font-size: 14px;
+    }
+    @media (max-width: $screen-md){
+
+    }
+
+    &:hover, &:focus {
+      color: white;
+    }
+
+    &--custom {
+      border-color: #59A540;
+      color: #59A540;
+
+      &:hover, &:focus {
+        color: #59A540;
+      }
+    }
+  }
+}

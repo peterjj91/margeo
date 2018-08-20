@@ -1,0 +1,65 @@
+
+.sidr {
+  button {
+    display: none;
+  }
+
+  .sidr-class-dropdown__btn {
+    padding: 0px 15px;
+  }
+}
+
+.slick-slider {
+  .slick-arrow {
+    @media (max-width: $screen-xs) {
+
+    }
+
+    &:after, &:before {
+
+    }
+
+    &.slick-prev {
+
+
+      @media (max-width: $screen-md) {
+
+      }
+    }
+
+    &.slick-next {
+
+
+      @media (max-width: $screen-md) {
+
+      }
+    }
+  }
+}
+
+.main-slider {
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 40px;
+
+  @media(max-width: $screen-sm){
+    height: 276px;
+    margin-bottom: 4px;
+  }
+
+  .slick-list {
+
+
+    @media(max-width: $screen-md){
+
+    }
+  }
+
+  .slick-slide {
+
+
+    @media(max-width: $screen-md){
+
+    }
+  }
+}
