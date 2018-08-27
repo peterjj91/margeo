@@ -3,8 +3,12 @@
   position: relative;
   z-index: 0;
   transition: all 0.15s ease-out 0s;
+  padding-top: 47px;
   padding-bottom: 80px;
 
+  @media(max-width: $screen-md){
+    padding-top: 0;
+  }
   @media(max-width: $screen-sm){
     padding-bottom: 40px;
   }
@@ -13,5 +17,3 @@
     @extend .container;
   }
 }
-
-

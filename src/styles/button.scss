@@ -38,13 +38,34 @@ button {
       color: white;
     }
 
+    svg {
+      vertical-align: bottom;
+      margin-left: 10px;
+    }
+
     &--custom {
       border-color: #59A540;
       color: #59A540;
+      fill: #59A540;
 
       &:hover, &:focus {
         color: #59A540;
       }
+    }
+
+    &--dark {
+      border-color: #000000;
+      color: #000000;
+      fill: #000000;
+
+      &:hover, &:focus {
+        color: #000000;
+      }
+    }
+
+    &--full {
+      background-color: #5CA446;
+      color: white;
     }
   }
 }

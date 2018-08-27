@@ -10,6 +10,10 @@
 }
 
 .slick-slider {
+  .slick-slide {
+    outline: none;
+  }
+
   .slick-arrow {
     @media (max-width: $screen-xs) {
 
@@ -61,5 +65,68 @@
     @media(max-width: $screen-md){
 
     }
+  }
+
+  &--index {
+      margin-top: -47px;
+  }
+}
+
+.slider-article {
+  margin-bottom: 60px;
+
+  @media(max-width: $screen-sm){
+
+  }
+
+  &__wrapper {
+    overflow: hidden;
+  }
+  
+  &__item {
+    vertical-align: top;
+    position: relative;
+    padding-bottom: 20px;
+
+
+    img {
+      height: 324px;
+
+      @media(max-width: $screen-sm){
+        height: 172px;
+      }
+    }
+
+    p {
+      color: #4A4A4A;
+      font-size: 14px;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    padding: 0px 20px;
+
+    @media(max-width: $screen-sm){
+      padding: 0;
+    }
+  }
+
+  .slick-slide {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .slick-track {
+    //margin-left: -10px;
+    //margin-right: -10px;
+  }
+
+  .slick-list {
+    overflow: visible;
+
   }
 }

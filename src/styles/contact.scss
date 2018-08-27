@@ -2,3 +2,60 @@
 .contact {
 
 }
+
+.mini-contact {
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  font-size: 18px;
+
+  @media(max-width: $screen-sm){
+    padding: 0;
+  }
+  @media(max-width: $screen-xs){
+    display: block;
+  }
+
+  &__block {
+    width: 50%;
+    padding: 0px 20px;
+    border-right: 1px solid #2D7517;
+
+    @media(max-width: $screen-sm){
+      border: none;
+    }
+    @media(max-width: $screen-xs){
+      width: 100%;
+      padding: 0;
+      margin-bottom: 50px;
+    }
+
+    &:last-child {
+      border-right: none;
+
+      @media(max-width: $screen-xs){
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__line {
+    margin-bottom: 33px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .head-h1 {
+    margin-bottom: 7px;
+  }
+
+  .head-h1, .head-h2 {
+    color: #000;
+  }
+
+  p {
+    margin-bottom: 8px;
+  }
+}

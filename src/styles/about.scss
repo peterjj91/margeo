@@ -1,0 +1,30 @@
+
+.about-page {
+  &__block {
+    margin-bottom: 70px;
+
+    @media(max-width: $screen-sm){
+      margin-bottom: 44px;
+    }
+
+    &--background {
+      padding: 100px 0px 97px 0px;
+      background-color: #F6F6F6;
+      margin-bottom: 0;
+
+      @media(max-width: $screen-sm){
+        padding: 44px 0px 22px 0px;
+      }
+    }
+
+    &--white {
+      padding: 100px 0px 97px 0px;
+      background-color: white;
+      margin-bottom: 0;
+
+      @media(max-width: $screen-sm){
+        padding: 44px 0px 44px 0px;
+      }
+    }
+  }
+}

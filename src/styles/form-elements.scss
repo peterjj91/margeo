@@ -1,8 +1,8 @@
 
 textarea {
-  font-size: 13px;
   color: #787886;
-  padding: 10px 0px;
+  padding: 13px 8px 7px 8px;
+  font-size: 16px;
   box-shadow: none;
   outline: none;
   resize: vertical;
@@ -41,8 +41,8 @@ input {
   box-shadow: none;
   background-color: transparent;
   color: #000;
-  font-size: 15px;
-  padding: 6px 12px;
+  padding: 13px 8px 7px 8px;
+  font-size: 16px;
 
   @media(max-width: $screen-md){
     font-size: 16px;
@@ -66,8 +66,18 @@ input {
   }
 }
 
+.form-control {
+  font-size: 16px;
+  padding: 17px 8px 9px 8px;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  border-bottom: 1px solid;
+  height: auto;
+}
+
 .form-group {
-  margin-bottom: 48px;
+
 
   label {
     margin-bottom: 16px;
@@ -75,10 +85,7 @@ input {
   }
 
   .form-control {
-    border-radius: 0px;
-    height: 40px;
-    background-color: #fcfcfc;
-    border-color: #ff572a;
+
   }
 
   textarea.form-control {
@@ -90,10 +97,10 @@ input {
       border-color: #ff572a;
     }
   }
+}
 
-  &--line {
-    border-bottom: 2px solid #ffca1c;
-  }
+form {
+  margin: 0;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -101,6 +108,78 @@ input {
   textarea,
   input {
     font-size: 16px;
+  }
+}
+
+.input-material {
+  position: relative;
+  padding: 0;
+  margin: 3px 0px;
+  border: none;
+  overflow: visible;
+
+  .input-material__input {
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 100%;
+    padding: 12px 6px 10px 6px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(13,32,41,.89);
+    font-size: 120%;
+    outline: none;
+    cursor: text;
+    background-color: transparent;
+
+    &::-webkit-input-placeholder {
+      transition: color 300ms ease;
+    }
+    &:not(:focus)::-webkit-input-placeholder {
+      color: transparent;
+    }
+  }
+
+  hr {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 2px;
+    border: none;
+    background: rgba(13,32,41,.89);
+    font-size: 1px;
+    will-change: transform, visibility;
+    transition: all 200ms ease-out;
+    transform: scaleX(0);
+    visibility: hidden;
+    z-index: 10;
+  }
+
+  .input-material__input:focus ~ hr {
+    transform: scaleX(1);
+    visibility: visible;
+  }
+
+  .input-material__label {
+    position: absolute;
+    top: 15px;
+    left: 7px;
+    font-size: 120%;
+    font-weight: normal;
+    color: rgba(0, 0, 0, .37);
+    transform-origin: 0 -150%;
+    transition: transform 300ms ease;
+    pointer-events: none;
+  }
+
+  .input-material__input:focus ~ .input-material__label, .input-material__input:valid ~ .input-material__label {
+    transform: scale(0.6);
+    top: 10px;
   }
 }
 
