@@ -16,6 +16,16 @@
 
     &:hover {
       z-index: 1;
+
+      .plus-item__img {
+        .show {
+          display: none !important;
+        }
+
+        .hide {
+          display: block !important;
+        }
+      }
     }
 
     @media(max-width: $screen-xs){
@@ -60,6 +70,10 @@
       background-repeat: no-repeat !important;
       background-position: center top !important;
       background-size: contain !important;
+    }
+
+    img {
+
     }
 
     &--one {

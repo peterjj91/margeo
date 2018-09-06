@@ -7710,6 +7710,9 @@ form {
       margin-bottom: 4px; } }
   .main-slider--index {
     margin-top: -47px; }
+    @media (max-width: 1300px) {
+      .main-slider--index {
+        margin-top: 0; } }
 
 .slider-article {
   margin-bottom: 60px; }
@@ -8718,9 +8721,6 @@ form {
   .promo-people p {
     color: #000; }
   .promo-people__more {
-    position: absolute;
-    left: 0;
-    bottom: 16px;
     color: #174C07;
     font-size: 14px; }
     .promo-people__more:hover, .promo-people__more:hover {
@@ -8920,6 +8920,10 @@ form {
         width: 25%; } }
     .plus-item__block:hover {
       z-index: 1; }
+      .plus-item__block:hover .plus-item__img .show {
+        display: none !important; }
+      .plus-item__block:hover .plus-item__img .hide {
+        display: block !important; }
     @media (max-width: 700px) {
       .plus-item__block {
         position: relative;

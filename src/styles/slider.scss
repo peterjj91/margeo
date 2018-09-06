@@ -68,7 +68,11 @@
   }
 
   &--index {
-      margin-top: -47px;
+    margin-top: -47px;
+
+    @media(max-width: $screen-md){
+      margin-top: 0;
+    }
   }
 }
 
