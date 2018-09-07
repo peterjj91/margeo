@@ -94,6 +94,16 @@
       padding-bottom: 0;
       width: auto;
     }
+
+    .btn {
+      transition: none;
+
+      &:hover, &:focus {
+        background-color: #fff;
+        color: #000;
+        opacity: 1;
+      }
+    }
   }
 
   &__nav {

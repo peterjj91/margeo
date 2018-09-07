@@ -14,20 +14,6 @@
     @include make-md-column(6);
     text-align: center;
 
-    &:hover {
-      z-index: 1;
-
-      .plus-item__img {
-        .show {
-          display: none !important;
-        }
-
-        .hide {
-          display: block !important;
-        }
-      }
-    }
-
     @media(max-width: $screen-xs){
       @include make-xs-column(12);
       padding: 0 !important;
@@ -56,6 +42,17 @@
 
     &:hover {
       box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.08);
+      z-index: 1;
+
+      .plus-item__img {
+        .show {
+          display: none !important;
+        }
+
+        .hide {
+          display: block !important;
+        }
+      }
     }
   }
 
@@ -74,6 +71,14 @@
 
     img {
 
+    }
+
+    & > * {
+      width: 100%;
+
+      @media(max-width: $screen-xs){
+        height: 80%;
+      }
     }
 
     &--one {

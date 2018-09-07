@@ -42110,7 +42110,9 @@ $('.main-slider').slick({
     prevArrow: $(".promo-main__nav__arrow--left"),
     nextArrow: $(".promo-main__nav__arrow--right"),
     draggable: false,
-    // speed: 200,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
     focusOnSelect: true,
     responsive: [
         {
