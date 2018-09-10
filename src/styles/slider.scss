@@ -45,11 +45,20 @@
   height: 400px;
   overflow: hidden;
   margin-bottom: 40px;
+  position: relative;
 
   @media(max-width: $screen-sm){
     height: 276px;
     margin-bottom: 4px;
   }
+
+  //&__wrapper {
+  //  &:before {
+  //    content: '';
+  //    display: block;
+  //    margin-top: 56.25%;
+  //  }
+  //}
 
   .slick-list {
 
@@ -60,7 +69,7 @@
   }
 
   .slick-slide {
-
+    transition: none !important;
 
     @media(max-width: $screen-md){
 

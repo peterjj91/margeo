@@ -10,9 +10,9 @@
 
   }
   @media(max-width: $screen-sm){
-    height: 116px;
+    height: auto;
+    padding-bottom: 0px;
     padding-top: 0px;
-    padding-bottom: 15px;
   }
   @media(max-width: $screen-xs){
 

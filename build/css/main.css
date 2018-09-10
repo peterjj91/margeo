@@ -7549,9 +7549,9 @@ form {
   padding-bottom: 17px; }
   @media (max-width: 1050px) {
     .header {
-      height: 116px;
-      padding-top: 0px;
-      padding-bottom: 15px; } }
+      height: auto;
+      padding-bottom: 0px;
+      padding-top: 0px; } }
   .header__main {
     display: -ms-flexbox;
     display: flex;
@@ -7703,11 +7703,14 @@ form {
 .main-slider {
   height: 400px;
   overflow: hidden;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  position: relative; }
   @media (max-width: 1050px) {
     .main-slider {
       height: 276px;
       margin-bottom: 4px; } }
+  .main-slider .slick-slide {
+    transition: none !important; }
   .main-slider--index {
     margin-top: -47px; }
     @media (max-width: 1300px) {
