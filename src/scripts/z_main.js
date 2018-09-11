@@ -43,6 +43,8 @@ $('.main-slider').slick({
     nextArrow: $(".promo-main__nav__arrow--right"),
     draggable: false,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
     fade: true,
     cssEase: 'linear',
     focusOnSelect: true,

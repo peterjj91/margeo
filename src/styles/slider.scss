@@ -74,6 +74,34 @@
     @media(max-width: $screen-md){
 
     }
+
+    &.slick-active {
+      //animation: Slick-FastSwipeIn 1s both;
+
+      .promo-main {
+        &__img {
+          animation: fadeIn 2s;
+          //animation: fadein 1s;
+        }
+
+        &__description {
+          animation: fadeInUp 0.5s both 0.05s;
+        }
+
+        &__content {
+          &:before {
+            animation: fadeInUp 0.5s both 0.05s;
+            z-index: 0;
+          }
+        }
+      }
+    }
+
+    .promo-main {
+      &__img {
+
+      }
+    }
   }
 
   &--index {
@@ -82,6 +110,46 @@
     @media(max-width: $screen-md){
       margin-top: 0;
     }
+  }
+}
+
+/* ==== Slider Image Transition === */
+@keyframes Slick-FastSwipeIn{
+  0%{transform:rotate3d(0,1,0,150deg) scale(0)  perspective(400px);}
+  100%{transform:rotate3d(0,1,0,0deg) scale(1) perspective(400px);}
+}
+@-webkit-keyframes ProgressDots{from{width:0px;}to{width:100%;}}
+@keyframes ProgressDots{from{width:0px;}to{width:100%;}}
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
